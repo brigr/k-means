@@ -1,9 +1,10 @@
 %% (C) Copyright 2012. All rights reserved. Sotiris L Karavarsamis.
-% Contact author at sokar@aiia.csd.auth.gr
+%  Contact the author at <sokar@aiia.csd.auth.gr>
 % 
-% This is an implementation of the k-means algorithm straight from the
-% pseudocode description based on the book 'Introduction to Information
-% Retrieval' by Manning, Schutze, Raghavan.
+%  This is my implementation on the k-means algorithm straight from the
+%  pseudocode description of the very same algorithm on the book
+%  'Introduction to Information Retrieval' by Manning, Schutze
+%  and Raghavan.
 
 function [C, I, iter] = myKmeans(X, K, maxIter, TOL)
 
