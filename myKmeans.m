@@ -52,15 +52,8 @@ while 1
     
     % compute centers
     for k=1:K
-        C(k,:) = zeros(1,2);
-        clusterCount = 0;
-        for idx=1:vectors_num
-            if I(idx) == k
-                C(k,:) = C(k,:) + X(idx,:);
-                clusterCount = clusterCount + 1;
-            end
-        end
-        C(k,:) = C(k,:) / clusterCount;
+        C(k, :) = sum(X(find(I == k), :));
+        C(k, :) = C(k, :) / length(find(I == k));
     end
     
     % compute RSS error
