@@ -67,7 +67,7 @@ while 1
     iter = iter + 1;
     
     % check stopping criteria
-    if 1/RSS_error < TOL
+    if RSS_error < TOL
         break;
     end
     
